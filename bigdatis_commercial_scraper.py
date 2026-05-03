@@ -47,7 +47,7 @@ class BigdatisCommercialScraper:
                 "location": {"id": None, "additionalIds": []},
                 "price": {"min": None, "max": None, "excludeMissing": False},
                 "propertyFilters": [
-                    {"property": "transactionType", "values": ["sale"]},
+                    {"property": "transactionType", "values": ["rentale"]},
                     {"property": "propertyType", "values": [property_type]}
                 ]
             },
@@ -299,7 +299,7 @@ class BigdatisCommercialScraper:
                 "surface": annonce.get("area"),
                 "type_local": type_name,
                 "type_local_code": properties.get("propertyType"),
-                "type_transaction": properties.get("transactionType", "sale"),
+                "type_transaction": properties.get("transactionType", "rentale"),
                 "type_vendeur": properties.get("sellerType"),
                 "location_id": annonce.get("locationId"),
                 "thumbnail_url": annonce.get("thumbnailUrl"),
