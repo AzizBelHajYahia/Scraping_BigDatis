@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual Environment
+venv/
+.env
+
+# VSCode
+.vscode/
+
+# Data / Logs
+data/
+logs/
+
+# GitHub Actions artifacts
+*.zip
